@@ -287,7 +287,7 @@ MonoBehaviour:
   - {fileID: 3599279343249421193}
   startPoint: {fileID: 599274319}
   duration: 0.2
-  delay: 0.1
+  delay: 0.05
   ease: 27
 --- !u!1 &180898293
 GameObject:

@@ -220,7 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
       propertyPath: m_text
-      value: Credits
+      value: Sobre
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
+      propertyPath: m_fontSize
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
@@ -2981,7 +2985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
       propertyPath: m_text
-      value: Exit
+      value: Sair
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
+      propertyPath: m_fontSize
+      value: 55
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
@@ -4174,9 +4182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
       propertyPath: m_text
-      value: 'Play
-
-'
+      value: Jogar
       objectReference: {fileID: 0}
     - target: {fileID: 7525517050948547595, guid: 4352e289a1b51b64d91e22b413cf0508, type: 3}
       propertyPath: m_fontSize
