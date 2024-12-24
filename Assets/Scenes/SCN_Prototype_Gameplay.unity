@@ -674,6 +674,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 203267931}
+  - component: {fileID: 203267932}
   m_Layer: 5
   m_Name: HUD_Coins
   m_TagString: Untagged
@@ -702,6 +703,19 @@ RectTransform:
   m_AnchoredPosition: {x: 176.42279, y: -60}
   m_SizeDelta: {x: 332.8456, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &203267932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203267930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e01fc52263f1a81489dedc33b789909b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textCoin: {fileID: 1432056276}
 --- !u!1 &257645417
 GameObject:
   m_ObjectHideFlags: 0

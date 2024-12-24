@@ -14,6 +14,7 @@ public class ItemCollectableCoin : ItemCollectableBase
         transform.DOMoveY(moveY, duration).SetEase(ease).OnComplete(() =>
         {
             base.Collect();
+            ItemManager.Instance.AddCoins();
         });
     }
 }

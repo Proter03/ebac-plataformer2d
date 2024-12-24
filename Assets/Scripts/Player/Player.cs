@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (healthBase.IsDead) return;
+
         HandleJump();
         HandleMoviment();
     }

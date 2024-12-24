@@ -15,6 +15,8 @@ public class HealthBase : MonoBehaviour
 
     [SerializeField] private FlashColor _flashColor;
 
+    public bool IsDead => _isDead;
+
     private void Awake()
     {
         Init();
