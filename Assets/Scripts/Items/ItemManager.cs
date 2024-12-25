@@ -1,10 +1,8 @@
 using Ebac.Core.Singleton;
-using TMPro;
 
 public class ItemManager : Singleton<ItemManager>
 {
-    public int coins;
-    public TextMeshProUGUI uiTextCoins;
+    public SOInt coins;
 
     private void Start()
     {
@@ -13,18 +11,11 @@ public class ItemManager : Singleton<ItemManager>
 
     private void Reset()
     {
-        coins = 0;
-        UpdateUI();
+        coins.value = 0;
     }
 
     public void AddCoins(int amount = 1)
     {
-        coins += amount;
-        UpdateUI();
-    }
-
-    private void UpdateUI()
-    {
-        uiTextCoins.text = $"x {coins}";
+        coins.value += amount;
     }
 }
