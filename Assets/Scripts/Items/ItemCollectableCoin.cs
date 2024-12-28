@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ItemCollectableCoin : ItemCollectableBase
 {
-    [Header("Animation setup")]
+    [Header("Animation Setup")]
     public float duration = .5f;
     public float moveY = 4;
     public Ease ease = Ease.OutBack;

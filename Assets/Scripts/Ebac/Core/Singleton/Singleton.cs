@@ -10,7 +10,6 @@ namespace Ebac.Core.Singleton
         {
             if (Instance == null)
                 Instance = GetComponent<T>();
-
             else
                 Destroy(gameObject);
         }

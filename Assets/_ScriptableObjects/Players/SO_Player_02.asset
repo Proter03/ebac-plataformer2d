@@ -15,8 +15,8 @@ MonoBehaviour:
   player: {fileID: 6413013834153556191, guid: 5fa7d57aaada605469fafb6d604cab3c, type: 3}
   soStringName: {fileID: 11400000, guid: b3a58076cc062b64b897a3cd5791c833, type: 2}
   friction: {x: -0.3, y: 0}
-  speed: 20
-  speedRun: 25
+  speed: 25
+  speedRun: 30
   forceJump: 25
   jumpScaleY: 1.1
   jumpScaleX: 0.7
