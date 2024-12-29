@@ -9,17 +9,16 @@ public class Player : MonoBehaviour
     [Header("Setup")]
     public SOPlayerSetup soPlayerSetup;
 
+    [Header("Jump Collision Check")]
+    public Collider2D collider2D;
+    public float distToGround;
+    public float spaceToGround = 1.1f;
+
     private float _currentSpeed;
 
     private float _directionLook = 1;
 
     private Animator _currentPlayer;
-
-    [Header("Jump Collision Check")]
-    public Collider2D collider2D;
-    public float distToGround;
-    public float spaceToGround = 1.1f;
-    public ParticleSystem jumpVFX;
 
     private void Awake()
     {
@@ -38,7 +37,6 @@ public class Player : MonoBehaviour
 
     private bool IsGrounded()
     {
-        Debug.DrawRay(transform.position, -Vector2.up, Color.magenta, distToGround + spaceToGround);
         return Physics2D.Raycast(transform.position, -Vector2.up, distToGround + spaceToGround);
     }
 
@@ -125,7 +123,7 @@ public class Player : MonoBehaviour
 
     private void PlayJumpVFX()
     {
-        if (jumpVFX != null) jumpVFX.Play();
+        VFXManager.Instance.PlayVFXByType(VFXManager.VFXType.JUMP, transform.position);
     }
 
     private void HandleScaleJump()

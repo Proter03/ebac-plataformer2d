@@ -132,6 +132,7 @@ MonoBehaviour:
   particleSystem: {fileID: 4181351305250523960}
   timeToHide: 3
   graphicItem: {fileID: 6623710914851356028}
+  collider2D: {fileID: 7744628136609100519}
   duration: 0.2
   ease: 8
 --- !u!58 &7744628136609100519

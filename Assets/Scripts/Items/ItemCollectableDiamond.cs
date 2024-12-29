@@ -10,10 +10,10 @@ public class ItemCollectableDiamond : ItemCollectableBase
 
     protected override void Collect()
     {
+        base.Collect();
         transform.DOScale(Vector2.zero, duration).SetEase(ease);
         transform.DORotate(animationRotation, duration, RotateMode.FastBeyond360).SetEase(ease).OnComplete(() =>
         {
-            base.Collect();
             ItemManager.Instance.AddDiamonds();
         });
     }

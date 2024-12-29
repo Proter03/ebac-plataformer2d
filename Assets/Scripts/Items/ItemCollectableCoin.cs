@@ -9,9 +9,9 @@ public class ItemCollectableCoin : ItemCollectableBase
 
     protected override void Collect()
     {
+        base.Collect();
         transform.DOScale(Vector2.zero, duration).SetEase(ease).OnComplete(() =>
         {
-            base.Collect();
             ItemManager.Instance.AddCoins();
         });
     }

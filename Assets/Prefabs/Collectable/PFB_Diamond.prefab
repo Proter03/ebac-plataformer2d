@@ -46,8 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 3
+  graphicItem: {fileID: 7152381438051524195}
+  collider2D: {fileID: 7152381437521966921}
   duration: 0.5
-  endValue: {x: 0, y: 1000, z: 0}
+  animationRotation: {x: 0, y: 1000, z: 0}
   ease: 8
 --- !u!58 &7152381437521966921
 CircleCollider2D:
@@ -76,7 +80,7 @@ GameObject:
   - component: {fileID: 7152381438051524192}
   - component: {fileID: 7152381438051524193}
   m_Layer: 0
-  m_Name: Square
+  m_Name: SPR_Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
