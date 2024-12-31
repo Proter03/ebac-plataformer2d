@@ -8,6 +8,9 @@ public class ItemCollectableBase : MonoBehaviour
     public GameObject graphicItem;
     public Collider2D collider2D;
 
+    [Header("Sounds")]
+    public AudioSource audioSource;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.CompareTag(compareTag))
@@ -33,5 +36,6 @@ public class ItemCollectableBase : MonoBehaviour
     protected virtual void OnCollect()
     {
         if (particleSystem != null) particleSystem.Play();
+        if (audioSource != null) audioSource.Play();
     }
 }
