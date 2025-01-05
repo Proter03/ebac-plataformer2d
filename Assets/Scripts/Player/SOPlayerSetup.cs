@@ -23,4 +23,7 @@ public class SOPlayerSetup : ScriptableObject
     public string boolRun = "Run";
     public string triggerDeath = "Death";
     public float playerSwipeDuration = .1f;
+
+    [Header("SFX")]
+    public AudioClip clipJump;
 }

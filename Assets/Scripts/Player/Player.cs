@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public HealthBase healthBase;
+    public AudioSource audioSource;
 
     [Header("Setup")]
     public SOPlayerSetup soPlayerSetup;
@@ -113,6 +114,9 @@ public class Player : MonoBehaviour
         {
             myRigidbody.velocity = Vector2.up * soPlayerSetup.forceJump;
             myRigidbody.transform.localScale = new Vector2(_directionLook, 1);
+
+            if (soPlayerSetup.clipJump != null)
+                audioSource.PlayOneShot(soPlayerSetup.clipJump);
 
             DOTween.Kill(myRigidbody.transform);
 

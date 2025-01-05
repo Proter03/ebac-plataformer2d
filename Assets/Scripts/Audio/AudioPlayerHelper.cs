@@ -8,4 +8,9 @@ public class AudioPlayerHelper : MonoBehaviour
     {
         audioSource.Play();
     }
+
+    public void Play(AudioClip audioClip)
+    {
+        audioSource.PlayOneShot(audioClip);
+    }
 }
